@@ -1,0 +1,39 @@
+ASyStlg4z4BjlmHNrXnDSLwFzY6j8NwPPE16opmTNUxHYf1IXRThQgb3ZN9uWeq3byeJPHlGXp_Gk2f7
+
+ECKYHfIutJTW9x6PgRFePjsHJPH5MAomf34tbLqp7xmeckGaZGwM083k7ZHrY1cSnW18IYZcNKOH_chu
+
+
+A21AAK8maBGmZKO5YSZAPAxu7cgZW39McOAlcWuC8m4ZVtcfEAfuJZL80EEHJ6AxC1dhuyNeBoezmFImM7A3uRWMfQAHkNt4A
+
+
+
+Curl to get Access Token 
+-------------------------------------------
+curl -v -X POST "https://api-m.sandbox.paypal.com/v1/oauth2/token" \
+ -u "CLIENT_ID:CLIENT_SECRET" \
+ -H "Content-Type: application/x-www-form-urlencoded" \
+ -d "grant_type=client_credentials"
+
+
+Curl to run CRUD operations
+---------------------------------------
+
+curl -v -X GET https://api-m.sandbox.paypal.com/v1/invoicing/invoices?page=3&page_size=4&total_count_required=true\
+ -H "Content-Type: application/json" \
+ -H "Authorization: Bearer ACCESS-TOKEN"
+
+
+
+https://api-m.sandbox.paypal.com
+
+
+param("grant_type", "client_credentials")
+
+post -------v1/oauth2/token
+
+
+https://api-m.sandbox.paypal.com
+QP====page--3
+QP====page_size--4
+QP====total_count_required---true
+End point=====v1/invoicing/invoices
