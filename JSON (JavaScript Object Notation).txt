@@ -1,0 +1,92 @@
+JSON (JavaScript Object Notation) is a lightweight data format used for storing and transporting data. It's easy for humans to read and write, and easy for machines to parse and generate. It is often used when data is sent from a server to a web page.
+
+JSON Overview
+---------------------------
+Data is in name/value pairs
+
+Data is separated by commas
+
+Curly braces {} hold objects
+
+Square brackets [] hold arrays
+
+
+
+
+
+{
+    "name": "Tom",
+    "age": 32,
+    "salary": 56000,
+    "empAddress": {
+        "zip": 700033,
+        "state": "WB",
+        "city": "Kolkata"
+    },
+    "isMarried": true,
+    "id": "667",
+    "createdAt": "2025-04-08T14:56:14.230Z"
+}
+
+
+[
+{
+"name":"Harry",
+"age":32,
+"salary":78000f,
+"ismarried":true
+
+
+
+},
+
+{
+"name":"John",
+"age":52,
+"salary":98000f,
+"ismarried":true
+
+
+
+},
+
+{
+"name":"Matt",
+"age":42,
+"salary":68000f,
+"ismarried":false
+
+
+
+}]
+
+
+
+
+
+{
+    "name": "harry",
+    "age": 32,
+    "salary": 0,
+    "empAddress": {
+        "housedetails": {
+            "flatNo": 23,
+            "street": "PR Street",
+            "landmark": [
+                "ABC sweets",
+                "DP Hotel",
+                "JK Mall"
+            ],
+            "appartmentName": "GCK Appartment"
+        },
+        "zip": 700044,
+        "state": "WB",
+        "city": "Kolkata"
+    },
+    "banks": [
+        "Axis",
+        "SBI",
+        "ICICI"
+    ],
+    "married": false
+}
